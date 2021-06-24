@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="calSTYLE.css" />
+  </head>
+  <body>
+    <p id="box">CALCULATOR?</p>
+    <div class="calbox">
+      <table align="center">
+        <tr>
+          <td colspan="4">
+            <input id="text" class="input_q" type="text" value="" />
+          </td>
+        </tr>
+        <tr>
+          <td colspan="4">
+            <input id="text02" class="output" type="text" value="" />
+          </td>
+        </tr>
+        <tr>
+          <td><button class="num2" onclick="display('-')">-</button></td>
+          <td><button class="num" onclick="display('9')">9</button></td>
+          <td><button class="num" onclick="display('8')">8</button></td>
+          <td><button class="num" onclick="display('7')">7</button></td>
+        </tr>
+        <tr>
+          <td><button class="num2" onclick="display('*')">x</button></td>
+          <td><button class="num" onclick="display('6')">6</button></td>
+          <td><button class="num" onclick="display('5')">5</button></td>
+          <td><button class="num" onclick="display('4')">4</button></td>
+        </tr>
+        <tr>
+          <td><button class="num2" onclick="display('/')">/</button></td>
+          <td><button class="num" onclick="display('3')">3</button></td>
+          <td><button class="num" onclick="display('2')">2</button></td>
+          <td><button class="num" onclick="display('1')">1</button></td>
+        </tr>
+        <tr>
+          <td><button class="num2" onclick="display('+')">+</button></td>
+          <td><button class="num" onclick="display('.')">.</button></td>
+          <td><button class="num" onclick="display('0')">0</button></td>
+          <td rowspan="2">
+            <button class="equals" onclick="equalbtn()">=</button>
+          </td>
+        </tr>
+        <tr>
+          <td><button class="clrbtn" onclick="clr()">CLR</button></td>
+          <td><button class = "clrbtn" onclick="del()" >DEL</td>
+          <td><button class="num" onclick="display('00')">00</button></td>
+        </tr>
+      </table>
+    </div>
+    <script src="calJS.js"></script>
+  </body>
+</html>
